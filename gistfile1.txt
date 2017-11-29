@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ferrocarril;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Ferrocarril {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Introducir variables.
+        String rol = "Cargador";
+	int sueldo;
+	int horas;
+	int kilometro;
+	int dineroKilometro;
+	// Calcular el salario y vales que gana el cargador en una jornada laboral.
+	sueldo = Integer.parseInt(JOptionPane.showInputDialog("Introducir cantidad", "Teclee su cantidad"));
+	horas = Integer.parseInt(JOptionPane.showInputDialog("Introducir horas", "Teclee un entero"));
+	kilometro = Integer.parseInt(JOptionPane.showInputDialog("Introducir kilómetro", "Teclee un entero"));
+	dineroKilometro = Integer.parseInt(JOptionPane.showInputDialog("Introducir cantidad", "Teclee su cantidad"));
+	// Se despliegan los valores.
+	int salario = sueldo * horas;
+	System.out.println("Su salario es: " + salario);
+	int vales = kilometro + dineroKilometro;
+	System.out.println("Sus vales son: " + vales);
+    }    
+}
